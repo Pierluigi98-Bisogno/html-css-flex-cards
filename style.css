@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #111;
+    display: flex;
+    justify-content: center;
+}
+
+.team-section {
+    max-width: 1000px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.team-section h1 {
+    color: #e91e63;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.team-section p {
+    font-size: 1em;
+    color: #fafafa;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    display: flex;
+    background-color: #0e0e16;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.info a {
+    color: #00bfff;
+    font-size: 0.85em;
+    text-decoration: none;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.info a {
+    color: #00bfff;
+    font-size: 0.85em;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive spacing for very small screens */
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info {
+        padding: 10px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}
