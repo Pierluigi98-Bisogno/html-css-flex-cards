@@ -88,7 +88,7 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive spacing for very small screens */
+
 @media (max-width: 500px) {
     .card {
         flex-direction: column;
